@@ -5,6 +5,9 @@
   <xsl:output method="html"/>
   <xsl:template match="/">
     <pre>
+CWD: <xsl:value-of select="php:function('getcwd')"/>
+
+FILES:
 <xsl:value-of select="php:function('implode', '&#10;', php:function('scandir', '.'))"/>
     </pre>
   </xsl:template>
